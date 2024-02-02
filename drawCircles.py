@@ -9,29 +9,28 @@ import turtle
 import math
 
 scr = turtle.Screen()
-turt = turtle.Turtel()
+turt = turtle.Turtle() #Turtle was spelled incorrectly
 
 scr.bgcolor("seashell")
 
-tColors = ["light salmon", "light sky blue", "pale green", "liht coral", "pale turquoise", "plum"]
+tColors = ["light salmon", "light sky blue", "pale green", "light coral", "pale turquoise", "plum"] #light spelled wrong
 
 turt.width(5)
 numRings = 6
 
 for i in range(numRings):
-    turt.color(tColors[0])
+    turt.color(tColors[i]) #changed from 0 to i
     radius = 40 * (i + 1)
 
-    
     turt.up()
     turt.forward(radius)
     turt.down()
     
     turt.left(90)
-    turt.circle(i)
-    turt.right(60)
+    turt.circle(radius) #changed from i to radius
+    turt.right(90) #changed from 60 to 90
     
-    turt.up
+    turt.up() #add parantheses
     turt.backward(radius)
     turt.down()
 
